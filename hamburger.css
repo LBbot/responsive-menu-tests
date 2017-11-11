@@ -1,0 +1,182 @@
+body {
+	background-color: #262626;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	font-family: "Oswald", sans-serif;
+	font-size: 37px;
+	text-transform: uppercase;
+	margin: auto;
+	display: inline;
+	padding: 5px;
+	float: left;
+	}
+	
+h2 {
+	font-family: "Oswald";
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 60px;
+	padding-top: 50px;
+	text-shadow: 2px 2px black;
+}
+
+ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 20px;
+}
+
+li {
+	display: inline-block;
+	padding: 0px 10px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: lightblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+p {
+	color: #dce2e8;
+	max-width: 1000px;
+	text-indent: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em;
+}
+	
+.titlebar {	
+	background-color: black;
+	padding: 2px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.images1 {
+	background: url(xiv.jpg) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.images2 {
+	background: url(stellaris.jpg) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.images3 {
+	background: url(zelda.png) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.images4 {
+	background: url(nier.jpg) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+	margin: 0 auto;
+}
+
+#about {
+	color: gray;
+	font-style: italic;
+	margin: 50px 0;
+	text-align: center;
+}
+
+.legal {
+	color: white;
+	background-color: black;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 1px;
+}
+
+#menuword {
+	text-transform: uppercase;
+	float: right;
+	color: lightblue;
+	margin-top: 22px;
+	margin-right: 3px;
+	border: 2px solid lightblue;
+	border-radius: 5px;
+	padding: 1px;
+	cursor: pointer;
+	display: none;
+}
+
+#menuword:hover {
+	color: white;
+	border: 2px solid white;
+}
+
+/* THIS IS YOUR IMPORTANT DIFFERENCE PART */
+#hamburgerr {
+	float: right;
+    margin-top: 22px;
+    margin-right: 10px;
+    display: none;
+}
+
+.bar {
+	width: 35px;
+    height: 5px;
+}
+#bar1, #bar3, #bar5 {
+    background-color: lightblue;
+}
+#bar2, #bar4 {
+    background-color:black;
+}
+
+
+@media (max-width: 705px) {
+	#hamburgerr {
+		display: inline-block;
+	}
+
+	header {
+		position: absolute;
+	}
+
+	nav ul, nav:active ul { 
+	display: none;
+	position: absolute;
+	padding: 10px;
+	background: #262626;
+	right: 0px;
+	top: 76px;
+	width: 35%;
+	margin-top: -52px;
+	}
+	
+	nav:hover ul {
+	display: block;
+	}
+	
+	nav li {
+	text-align: center;
+	width: 100%;
+	padding: 5px 0;
+	margin: 0;
+	}
+
+}
